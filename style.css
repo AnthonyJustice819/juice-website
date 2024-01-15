@@ -499,7 +499,7 @@ input[type="submit"] {
   header {
     position: fixed;
     top: 0;
-    padding: 1em 0em;
+    padding: 1em 1em;
     margin-bottom: 10em;
     z-index: 999;
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
