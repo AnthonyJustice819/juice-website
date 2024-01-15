@@ -62,7 +62,7 @@ nav ul li a:hover {
 .sign-up {
   font-size: 16px;
   padding: 5px;
-  border: 2px solid #715c47;
+  border: 1px solid #715c47;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Inter", sans-serif;
@@ -78,7 +78,7 @@ nav ul li a:hover {
   margin-bottom: 16vh;
 }
 #section-1 .content h1 {
-  font-size: 60px;
+  font-size: 45px;
   line-height: 110.5%;
   max-width: 100%;
   font-weight: 900;
@@ -103,7 +103,7 @@ nav ul li a:hover {
   color: #fff;
 }
 #section-1 .span .span-2 {
-  border: 2px solid #715c47;
+  border: 1px solid #715c47;
   padding: 9px;
   border-radius: 5px;
 }
@@ -125,7 +125,7 @@ nav ul li a:hover {
   max-width: 35%;
 }
 #section-2 .content h1 {
-  font-size: 60px;
+  font-size: 45px;
   line-height: 110.5%;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
@@ -144,6 +144,7 @@ nav ul li a:hover {
 }
 .watermelon,
 .pineapple {
+  max-width: 100%;
   margin-right: 4vh;
   margin-left: 4vh;
   height: 31vh;
@@ -155,6 +156,7 @@ nav ul li a:hover {
   background-image: linear-gradient(#ffefbc, #ffbd4d);
 }
 .grape {
+    max-width: 100%;
   position: relative;
   top: 10vh;
   margin-right: 4vh;
@@ -170,7 +172,7 @@ nav ul li a:hover {
   margin-bottom: 10vh;
 }
 #section-3 h1 {
-  font-size: 50px;
+  font-size: 45px;
   max-width: 65vh;
   margin-bottom: 10vh;
   font-weight: 900;
@@ -186,6 +188,7 @@ nav ul li a:hover {
 .mango,
 .kiwi,
 .berry {
+  max-width: 100%;
   margin-right: 4vh;
   margin-left: 4vh;
   padding: 2vh;
