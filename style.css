@@ -495,7 +495,6 @@ input[type="submit"] {
   body {
     padding: 0;
   }
-
   header {
     position: fixed;
     top: 0;
@@ -511,7 +510,7 @@ input[type="submit"] {
   nav ul {
     width: 100%;
     position: absolute;
-    top: 66px;
+    top: 61px;
     right: 0;
     margin-right: 0;
     background: #715c47;
