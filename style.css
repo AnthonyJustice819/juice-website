@@ -91,9 +91,9 @@ nav ul li a:hover {
   margin-bottom: 5vh;
   font-family: "Inter", sans-serif;
 }
-#section-1 .span {
-  margin-top: 10vh;
-  display: inline;
+#section-1 .content .span {
+  margin-top: 4em;
+  display: block;
   cursor: pointer;
 }
 #section-1 .span .span-1 {
@@ -101,6 +101,7 @@ nav ul li a:hover {
   padding: 9px;
   border-radius: 5px;
   margin-right: 8px;
+
   color: #fff;
 }
 #section-1 .span .span-2 {
@@ -116,7 +117,7 @@ nav ul li a:hover {
     display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10em;
+  margin-bottom: em;
 }
 #section-2 .content h1 {
   font-size: 45px;
@@ -126,7 +127,7 @@ nav ul li a:hover {
 }
 #section-2 .content p {
   font-size: 20px;
-  margin-top: 3vh;
+  margin-top: 2em;
   font-family: "Inter", sans-serif;
 }
 .drinks {
@@ -206,9 +207,9 @@ nav ul li a:hover {
 }
 #section-4 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* flex-wrap: wrap; */
+justify-content: space-between;
+flex-wrap: wrap;
+
 }
 
 .contact h3 {
@@ -227,10 +228,9 @@ nav ul li a:hover {
 form {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 9vh;
+  margin-bottom: 2em;
 }
 
 input[type="email"] {
@@ -269,67 +269,7 @@ input[type="submit"] {
   height: 55px;
   width: 55px;
 }
-/*
-#section-4 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.contact {
-  text-align: center;
-}
-.contact h3 {
-  font-size: 40px;
-  font-weight: 900;
-  font-family: "Montserrat", sans-serif;
-}
-.contact p {
-  margin-top: 1vh;
-  margin-bottom: 5vh;
-  font-size: 20px;
-  font-family: "Inter", sans-serif;
-}
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 9vh;
-}
 
-input[type="email"] {
-  outline: none;
-  border: none;
-  height: 4vh;
-  border-radius: 5px;
-  padding-left: 2vh;
-}
-input[type="text"] {
-  margin-bottom: 1.5vh;
-  outline: none;
-  border: none;
-  height: 4vh;
-  border-radius: 5px;
-  padding-left: 2vh;
-}
-textarea {
-  outline: none;
-  border: none;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  border-radius: 5px;
-}
-input[type="submit"] {
-  background-color: #ffa004;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  padding-left: 2vh;
-  padding-right: 2vh;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-}
 .sitemap {
   text-align: center;
 }
@@ -347,6 +287,7 @@ input[type="submit"] {
 .sitemap li {
   margin-bottom: 3vh;
   font-family: "Inter", sans-serif;
+  text-decoration: 1px solid underline;
 }
 .sitemap li a {
   color: #000;
@@ -363,17 +304,15 @@ input[type="submit"] {
 .mail {
   margin-top: 2vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
-.phoneNum span {
+
+.phoneNum span, .mail span {
   margin-left: 1vh;
   font-family: "Inter", sans-serif;
 }
-.mail span {
-  margin-left: 1vh;
-  font-family: "Inter", sans-serif;
-}
+
 .footer {
   display: block;
   text-align: center;
@@ -395,7 +334,7 @@ input[type="submit"] {
 }
 .fb {
   background: #ffa004;
-} */
+}
 
 @media screen and (max-width: 1200px) {
   body {
@@ -414,13 +353,13 @@ input[type="submit"] {
     flex-direction: column;
   justify-content:center;
   align-items: center;
-  margin-bottom: 30vh;
+  margin-bottom: 10em;
 }
 #section-2 .content {
   margin-bottom: 3em;
+  text-align: center;
 }
 #section-2 .content h1 {
-  text-align: center;
   font-size: 45px;
   line-height: 110.5%;
   font-weight: 900;
@@ -429,7 +368,7 @@ input[type="submit"] {
 #section-2 .content p {
   text-align: center;
   font-size: 20px;
-  margin-top: 3vh;
+  margin-top: 2em;
   font-family: "Inter", sans-serif;
 }
 }
@@ -477,6 +416,41 @@ flex-direction: column;
 .watermelon, .grape, .pineapple {
   margin-bottom: 2em;
 }
+#section-4 {
+  flex-grow: 3;
+}
+}
+@media screen and (max-width: 593px) {
+  #section-4 {
+   justify-content: center;
+  }
+  .contact {
+    margin-right: 2em;
+    margin-bottom: 3em;
+  }
+  .sitemap {
+    margin-left: 2em;
+    margin-bottom: 3em;
+  }
+  .message {
+    margin-bottom: 3em;
+  }
+}
+@media screen and (max-width: 515px) {
+  #section-4 {
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+  }
+  .contact {
+    margin-right: 0;
+  }
+  .sitemap {
+    margin-left: 0;
+  }
+  .message {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 452px) {
   .sign-up {
