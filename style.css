@@ -135,8 +135,8 @@ nav ul li a:hover {
   justify-content: space-around;
 }
 .watermelon, .grape, .pineapple {
-  height: 10em;
-  width: 7em;
+  height: 15em;
+  width: 12em;
   object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.2) 4px 8px 16px;
   border-radius: 10px;
@@ -407,7 +407,7 @@ input[type="submit"] {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1140px) {
 #section-2 {
   width: 100%;
     display: flex;
@@ -467,6 +467,17 @@ flex-direction: column;
     margin-bottom: 3em;
   }
 }
+@media screen and (max-width: 634px) {
+  .drinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.watermelon, .grape, .pineapple {
+  margin-bottom: 2em;
+}
+}
 @media screen and (max-width: 452px) {
   .sign-up {
     display: none;
@@ -515,13 +526,4 @@ flex-direction: column;
     margin-top: 3em;
     margin-bottom: 3em;
   }
-  .drinks {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.watermelon, .grape, .pineapple {
-  margin-bottom: 2em;
-}
 }
